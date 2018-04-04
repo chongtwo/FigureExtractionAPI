@@ -22,5 +22,7 @@ public class FigureExtractController {
         longSentenceList.add(aLongSentence);
         ArrayList<ArrayList<String>> allList = figureExtraction.go(longSentenceList);
         return allList;
+
+        
     }
 }
