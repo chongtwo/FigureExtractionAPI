@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 
 @RestController
-@SpringBootApplication
 public class FigureExtractController {
 
     @GetMapping(value = "/nlp/{sentence}")
@@ -22,7 +21,5 @@ public class FigureExtractController {
         longSentenceList.add(aLongSentence);
         ArrayList<ArrayList<String>> allList = figureExtraction.go(longSentenceList);
         return allList;
-
-        
     }
 }
