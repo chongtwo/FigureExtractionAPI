@@ -18,21 +18,6 @@ public class FigureExtraction {
     public ArrayList<ArrayList<String>> go(ArrayList<String> longSentenceList) {
         int numOfLong = 0;
         ArrayList<ArrayList<String>> allList = new ArrayList<>();
-        //写入表头
-//        ArrayList<String> columnName = new ArrayList<>();
-//        columnName.add("原句");
-//        columnName.add("语义");
-//        columnName.add("主干部位");
-//        columnName.add("细节部位");
-//        columnName.add("区域");
-//        columnName.add("可能性");
-//        columnName.add("性状");
-//        columnName.add("诊断");
-//        columnName.add("变化");
-//        columnName.add("数量");
-//        columnName.add("测量位置");
-//        columnName.add("测量值");
-//        columnName.add("单位");
 
         //取一句长句，循环
         int end = longSentenceList.size();
