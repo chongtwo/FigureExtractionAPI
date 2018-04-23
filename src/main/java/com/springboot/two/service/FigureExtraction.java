@@ -3,6 +3,8 @@ package com.springboot.two.service;
 import com.springboot.two.domain.*;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+
+import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -15,7 +17,7 @@ import java.util.Map;
 
 public class FigureExtraction {
 
-    public ArrayList<ArrayList<String>> go(ArrayList<String> longSentenceList) {
+    public ArrayList<ArrayList<String>> go(ArrayList<String> longSentenceList) throws UnsupportedEncodingException {
         int numOfLong = 0;
         ArrayList<ArrayList<String>> allList = new ArrayList<>();
 

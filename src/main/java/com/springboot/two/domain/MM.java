@@ -1,9 +1,10 @@
 package com.springboot.two.domain;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import com.sun.org.apache.xpath.internal.SourceTree;
+import org.springframework.util.ResourceUtils;
+
+import java.io.*;
+import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -16,12 +17,13 @@ public class MM {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         String sentence=scanner.next();
-        MatchResult matchResult = maxMatching(sentence);
+        MM maxMatch = new MM();
+        MatchResult matchResult = maxMatch.maxMatching(sentence);
         System.out.println(matchResult.semanticSentence);
     }
 
 
-    public static MatchResult maxMatching(String sentence){
+    public MatchResult maxMatching(String sentence){
         len = MAXLEN;
         curIndex = 0;
         MatchResult matchResult = new MatchResult();
@@ -34,8 +36,9 @@ public class MM {
         while(curIndex<sentence.length()){
 
             try {
-                BufferedReader br = new BufferedReader(new InputStreamReader(
-                        new FileInputStream("D:\\1.放射报告结构化\\术语集\\术语集有语义2017.10.23改2018.03.27.txt"), "utf8"));
+                InputStream stream = getClass().getClassLoader().getResourceAsStream("static/term.txt");
+                BufferedReader br = new BufferedReader(new InputStreamReader(stream,"utf-8")); //一定"utf-8"
+
                 String subStr;//待匹配的字符串，类似滑动的窗口
                 if (curIndex+len>sentence.length()){//处理最后几个字
                     subStr=sentence.substring(curIndex,sentence.length());

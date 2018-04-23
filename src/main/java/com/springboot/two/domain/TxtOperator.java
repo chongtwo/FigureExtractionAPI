@@ -5,12 +5,11 @@ import java.util.ArrayList;
 
 public class TxtOperator {
 
-    public static ArrayList<String> readTxt(String path){
+    public ArrayList<String> readTxt(String path){
         ArrayList<String> lineList = new ArrayList<>();
         try{
-            File file = new File(path);
-            FileInputStream fileInputStream = new FileInputStream(file);
-            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+            InputStream fileInputStream = getClass().getClassLoader().getResourceAsStream(path); //一定要变成resource
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream,"utf-8");
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
             String line = "";
             line = bufferedReader.readLine();

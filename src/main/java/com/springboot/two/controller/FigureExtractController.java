@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 @RestController
@@ -19,7 +20,12 @@ public class FigureExtractController {
         FigureExtraction figureExtraction = new FigureExtraction();
         ArrayList<String> longSentenceList = new ArrayList<String>();
         longSentenceList.add(aLongSentence);
-        ArrayList<ArrayList<String>> allList = figureExtraction.go(longSentenceList);
+        ArrayList<ArrayList<String>> allList = null;
+        try {
+            allList = figureExtraction.go(longSentenceList);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         return allList;
     }
 }
