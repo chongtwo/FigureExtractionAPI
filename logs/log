@@ -1,0 +1,32 @@
+Logger--> INFO{FigureExtraction.java:64}-This is info message.
+   Logger--> INFO{FigureExtraction.java:31}-进入长句处理 长句编号：1
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：1
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：2
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：3
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：4
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：5
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：6
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：7
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：8
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：9
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：10
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：11
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：12
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：13
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:38}-进入短句处理 短句编号：14
+   Logger--> INFO{FigureExtraction.java:64}-短句处理完成
+   Logger--> INFO{FigureExtraction.java:66}-长句处理完成
+   
